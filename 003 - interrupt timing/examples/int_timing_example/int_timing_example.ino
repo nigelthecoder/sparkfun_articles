@@ -8,6 +8,8 @@
  * Please note that the code is simplified in a few places to keep it short.
  * In particular the stats binning code assumes that the mean interval is about 1,024 us. 
  * If you use a different input source frequency, you'll need to edit the code accordingly.
+ * Note also that this does not work on RedBoard Artemis as the locking scheme is different.
+ * Please see the article on portable critical sections for a fix.
  * 
  * Refs: 
  * https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
